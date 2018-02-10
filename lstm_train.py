@@ -12,7 +12,7 @@ def sigmoid_derivative(values):
 def tanh_derivative(values): 
     return 1. - values ** 2
 
-# createst uniform random array w/ values in [a,b) and shape args
+# creates uniform random array w/ values in [a,b) and shape args
 def rand_arr(a, b, *args): 
     np.random.seed(0)
     return np.random.rand(*args) * (b - a) + a
